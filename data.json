@@ -23,7 +23,7 @@
             "ddd": 0,
             "ind": 1,
             "ty": 5,
-            "nm": "WE",
+            "nm": "WELCOME",
             "sr": 1,
             "ks": {
                 "o": {
@@ -156,7 +156,7 @@
                             "s": {
                                 "s": 48,
                                 "f": "Impact",
-                                "t": "WEL",
+                                "t": "WELCOME",
                                 "j": 2,
                                 "tr": 0,
                                 "lh": 57.6,

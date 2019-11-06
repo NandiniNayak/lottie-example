@@ -13,7 +13,7 @@ var anim= bodymovin.loadAnimation({
 
 
 anim.addEventListener("DOMLoaded", function () {
-    console.log("BFEORE:", anim.renderer.elements[0].currentTextDocumentData.t);
+    console.log("BFEORE:", anim.renderer.elements[0]);
     anim.renderer.elements[0].updateDocumentData({
         t: 'w'
     });
