@@ -6,14 +6,20 @@
     <!--  Meta  -->
     <meta charset="UTF-8" />
     <title>Bodymovin Demo</title>
+    <!-- <base href="/"> -->
 
     <!--  Styles  -->
     <link rel="stylesheet" href="styles/index.processed.css">
+    <link rel="stylesheet" href="styles/app.css">
 </head>
 
 <body>
-
-    <div id="bm"> </div>
+    <label>Add text to animate</label>
+    <input id="input" placholder="Enter text for animation" name="text" value=""/>
+    <br>
+    <br>
+    <div id="bm" onclick="playAnimation('text_demo.json')"></div>
+    <div id="newAnimation"></div>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
