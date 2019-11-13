@@ -4,3 +4,21 @@
 #newAnimation{
     background-color: black;
 }
+label{
+    font-size: 3em;
+}
+input{
+    font-size: 2em;
+    border: solid grey;
+    padding: 10px 30px;
+    margin-left: 10px 30%;
+    text-align: center;
+}
+
+button {
+    font-size: 2em;
+    border-radius: 25px;
+    padding: 10px 30px;
+    margin-left: 20px;
+    background-color:aliceblue;
+}
