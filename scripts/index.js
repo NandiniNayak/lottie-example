@@ -15,8 +15,10 @@ var anim= bodymovin.loadAnimation({
 // });
 
 function playAnimation(jsonFileName){
+  document.getElementById('bm').firstChild.remove()
+
     var anim= bodymovin.loadAnimation({
-    container: document.getElementById('newAnimation'),
+    container: document.getElementById('bm'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
@@ -25,13 +27,11 @@ function playAnimation(jsonFileName){
 
   anim.addEventListener("DOMLoaded", function () {
     var newText = document.getElementById("input").value
-    console.log("dom", newText)
-    console.log("BEFORE:", anim.renderer.elements[0]);
     anim.renderer.elements[0].updateDocumentData({ t: newText, s: 90 }, 0);
-    anim.play();
-    console.log("AFTER:", anim.renderer.elements[0]);
-    anim.play();
+    anim.renderer.elements[1].updateDocumentData({ t: newText, s: 90 }, 0);
+    anim.renderer.elements[2].updateDocumentData({ t: newText, s: 90 }, 0);
+    anim.renderer.elements[3].updateDocumentData({ t: newText, s: 90 }, 0);
+    anim.renderer.elements[4].updateDocumentData({ t: newText, s: 90 }, 0);
   });
-
 }
 
